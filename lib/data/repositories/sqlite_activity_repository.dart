@@ -1,7 +1,6 @@
 import 'package:sqflite/sqflite.dart';
 import '../../core/constants/app_constants.dart';
 import '../../domain/entities/activity_session.dart';
-import '../../domain/entities/exercise_record.dart';
 import '../../domain/entities/gps_point.dart';
 import '../../domain/repositories/activity_repository.dart';
 import '../database/database_helper.dart';

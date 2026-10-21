@@ -64,7 +64,7 @@ class ActivityTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Text(
-              '${session.caloriesBurned.toStringAsFixed(0)}',
+              session.caloriesBurned.toStringAsFixed(0),
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w800,

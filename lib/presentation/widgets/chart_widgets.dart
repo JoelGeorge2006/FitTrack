@@ -26,7 +26,6 @@ class WeeklyActivityChart extends StatelessWidget {
     for (int i = 6; i >= 0; i--) {
       final day = now.subtract(Duration(days: i));
       final dayKey = DateFormat('yyyy-MM-dd').format(day);
-      final dayLabel = DateFormat('E').format(day); // Mon, Tue...
 
       // Check if day has data
       final entry = weeklyData.firstWhere(

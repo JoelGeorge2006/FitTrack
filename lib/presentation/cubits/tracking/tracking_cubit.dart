@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:geolocator/geolocator.dart';
+import 'package:geolocator/geolocator.dart' hide ActivityType;
 import 'package:latlong2/latlong.dart';
 import '../../../core/constants/app_constants.dart';
 import '../../../domain/entities/activity_session.dart';
@@ -118,7 +118,7 @@ class TrackingCubit extends Cubit<TrackingState> {
     const startLng = 77.5946;
 
     if (state.currentLocation == null) {
-      final initialLatLng = const LatLng(startLat, startLng);
+      const initialLatLng = LatLng(startLat, startLng);
       emit(state.copyWith(
         currentLocation: initialLatLng,
         routeCoordinates: [initialLatLng],
