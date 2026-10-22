@@ -322,7 +322,10 @@ class _ManualWorkoutScreenState extends State<ManualWorkoutScreen> {
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColors.surfaceBorder),
       ),
-      child: ListTile(
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(20),
+        child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
         leading: Container(
           width: 48,
@@ -361,6 +364,7 @@ class _ManualWorkoutScreenState extends State<ManualWorkoutScreen> {
           ),
         ),
         onTap: () => _onActivitySelected(activity),
+        ),
       ),
     );
   }

@@ -25,7 +25,10 @@ class ActivityTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColors.surfaceBorder),
       ),
-      child: ListTile(
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(20),
+        child: ListTile(
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         leading: Container(
           width: 46,
@@ -78,6 +81,7 @@ class ActivityTile extends StatelessWidget {
           ],
         ),
         onTap: onTap,
+        ),
       ),
     );
   }
